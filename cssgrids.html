@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .child{
+            border: 2px solid crimson;
+            color: crimson;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .parent{
+            display: grid;
+            /*grid-template-columns: 100px 200px 300px 200px;*/
+            grid-template-columns: 2fr 5fr 3fr; /*fr is fractional unit*/
+            /*gap: 20px;*/ /*isko use kregye toh by default row aur column mei same gap hoga*/
+            column-gap: 20px;
+            row-gap: 40px;
+        }
+    </style>
 </head>
 <body>
     
