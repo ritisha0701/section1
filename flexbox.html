@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            border: 2px solid crimson;
+            color: crimson;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        .parent{
+            display: flex;
+            flex-direction: row-reverse;                       /*gives direction and also reverse the data by row-reverse*/
+
+            /*justify-content: flex-end;*/              /*jha pr content align krna hai eg. end ,start, center */
+            justify-content: flex-end;               /*space gives space between the data by evenly around between*/
+
+            align-items: flex-start;
+
+            height: 100vh;
+
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="parent">      <!--div.parent>div.child*3{Child $} (isko use krne se baar baar type nhi krna hoga automatically hojayega)   -->
+        <div class="child">Child 1</div>
+        <div class="child">Child 2</div>
+        <div class="child">Child 3</div>
+    </div>  
+    
+
+</body>
+</html>
