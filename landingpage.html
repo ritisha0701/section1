@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -16,18 +17,37 @@
     <main>
         <article>
 
-            <section class="border-2 border-red-600 h-[60vh]">
+            <section class="min-h-[60vh]">
 
-                <div class="grid grid-cols-2 gap-5 border-2 border-green-600 w-[80%] mx-auto h-full">
-                    <div class="border-2 border-blue-600 my-auto">
-                        <h1 class="text-6xl font-bold">Hero Section Title</h1>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 w-[80%] mx-auto h-full">
+                    <div class="my-auto space-y-5 order-last lg:order-first text-center lg:text-left">
+                        <h1 class="text-3xl lg:text-6xl font-bold">Hero Section Title</h1>
                         <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid ducimus laborum delectus rerum dicta. Repudiandae iure quos consectetur aut saepe inventore, nostrum veniam ducimus eius magnam. Eius est ut maxime necessitatibus ducimus sit rem velit quam sint obcaecati expedita accusantium magni ad, odio ullam officiis totam harum! Cupiditate, ex ut?</p>
+                        <div class="flex gap-4 justify-center lg:justify-start">
+                            <button class="py-1.5 px-3 rounded border-2 border-blue-500 bg-blue-500 hover:bg-blue-800 text-white">Explore</button>
+                            <button class="py-1.5 px-3 rounded border-2 border-blue-500 text-blue-500">Get Started</button>
+                        </div>
                     </div>
-                    <div class="border-2 border-violet-600">
-                        <h1>Image</h1>
+                    <div class="my-auto">
+                        <img class="block mx-auto" src="https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg" alt="">
                     </div>
                 </div>
 
+            </section>
+            <section class="bg-yellow-200 py-6">
+                <h1 class="text-center text-3xl font-bold my-6">Product Cards</h1>
+                <div class="grid grid-cols-4 border-2 border-red-500 w-[80%] mx-auto">
+                    <div class="border-2 border-blue-500 shadow">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20231005/pypC/651ed0ffddf779151921cc0b/-473Wx593H-464730773-grey-MODEL.jpg" alt="sports shoe">
+                        <div class="p-4">
+                            <p>CAMPUS</p>
+                            <h2 class="text-2xl font-bold">Lace-Up Sports Shoes with Signature Branding</h2>
+                            <button class="bg-violet-500 text-white px-3 py-1.5 rounded"> <i class="fa-solid fa-cart-shopping"></i><i>&nbsp;</i> Add To Cart</button>
+
+                        </div>
+
+                    </div>
+                </div>
             </section>
 
         </article>
