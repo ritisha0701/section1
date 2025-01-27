@@ -88,3 +88,37 @@ console.log(smartphoneArray[2].colors);
 console.log(smartphoneArray[1].colors[0] = 'pink');
 console.log(smartphoneArray[1].colors);
 console.log(smartphoneArray[1]);
+
+//filter all smartphones with price less than 50000
+
+const budgetPhone = smartphoneArray.filter((phone) => {
+    return phone.price < 50000;
+});
+console.log(budgetPhone);
+
+//filter all phones with blue color
+
+//  console.log(['a', 'b', 'c'].includes('d'));
+
+const bluePhones = smartphoneArray.filter( (phone) => {
+    return phone.colors.includes('blue');
+});
+console.log(bluePhones);
+
+const brands = smartphoneArray.map( (phone) => {
+    return phone.brand;
+});
+console.log(brands);
+
+const keyword = 'Samsung';//agar hm model ka name lower case mei rkhegye toh kase match hoga
+//hm  tb hm dono trf lower case apply krdegye like this return phone.brand.toLowerCase === keyword.toLowerCase; 
+const results = smartphoneArray.filter( (phone) => {
+    return phone.brand === keyword; 
+});
+console.log(results);
+
+const kd = 'app';
+const result = smartphoneArray.filter( (phone) => {
+    return phone.brand.toLowerCase().includes(kd.toLocaleLowerCase());
+});
+console.log(result);
